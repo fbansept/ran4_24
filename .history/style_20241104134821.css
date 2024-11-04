@@ -1,0 +1,12 @@
+body {
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: ;
+}
+
+#scene {
+  background-color: white;
+  width: 1000px;
+  height: 500px;
+}

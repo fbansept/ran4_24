@@ -14,7 +14,7 @@ body {
   background-color: white;
   width: 1000px;
   height: 500px;
-  position: relative;
+  position: ;
 }
 
 #balle {
@@ -22,6 +22,6 @@ body {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 50px;
-  left: 200px;
+  top: 0;
+  bottom: 0;
 }
