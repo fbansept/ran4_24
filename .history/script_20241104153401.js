@@ -5,15 +5,13 @@ function frame() {
   balle.style.left = positionBalleX + "px";
   balle.style.top = positionBalleY + "px";
 
-  if (positionBalleX >= largeurScene - largeurBalle || positionBalleX < 0) {
+  if (positionBalleX >= 970 || positionBalleX < 0) {
     vitesseBalleX = -vitesseBalleX;
   }
 
-  if (positionBalleY >= hauteurScene - largeurBalle || positionBalleY < 0) {
+  if (positionBalleY >= 470 || positionBalleY < 0) {
     vitesseBalleY = -vitesseBalleY;
   }
-
-  
 }
 
 // ----- initialisation scene -----
@@ -28,36 +26,12 @@ scene.style.height = hauteurScene + "px";
 
 const balle = document.querySelector("#balle");
 let largeurBalle = 100;
+let angle = 0;
 let positionBalleX = 0;
 let vitesseBalleX = 10;
 let positionBalleY = 0;
 let vitesseBalleY = 8;
 balle.style.width = largeurBalle + "px";
 balle.style.height = largeurBalle + "px";
-
-// --------- EVENEMENT CLAVIER -------
-
-let toucheHautPresse = false;
-let toucheBasPresse = false;
-
-document.addEventListener("keydown", (e) => {
-  if (e.code == "ArrowUp") {
-    toucheHautPresse = true;
-  }
-
-  if (e.code == "ArrowDown") {
-    toucheBasPresse = true;
-  }
-});
-
-document.addEventListener("keyup", (e) => {
-  if (e.code == "ArrowUp") {
-    toucheHautPresse = false;
-  }
-
-  if (e.code == "ArrowDown") {
-    toucheBasPresse = false;
-  }
-});
 
 setInterval(frame, 1000 / 60);

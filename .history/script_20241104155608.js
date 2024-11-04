@@ -12,8 +12,6 @@ function frame() {
   if (positionBalleY >= hauteurScene - largeurBalle || positionBalleY < 0) {
     vitesseBalleY = -vitesseBalleY;
   }
-
-  
 }
 
 // ----- initialisation scene -----
@@ -56,7 +54,7 @@ document.addEventListener("keyup", (e) => {
   }
 
   if (e.code == "ArrowDown") {
-    toucheBasPresse = false;
+    toucheBasPresse = true;
   }
 });
 

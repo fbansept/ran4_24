@@ -12,8 +12,6 @@ function frame() {
   if (positionBalleY >= hauteurScene - largeurBalle || positionBalleY < 0) {
     vitesseBalleY = -vitesseBalleY;
   }
-
-  
 }
 
 // ----- initialisation scene -----

@@ -13,7 +13,7 @@ function frame() {
     vitesseBalleY = -vitesseBalleY;
   }
 
-  
+  console.log()
 }
 
 // ----- initialisation scene -----
