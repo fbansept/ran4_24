@@ -27,8 +27,8 @@ let positionBalleX = 0;
 let vitesseBalleX = 10;
 let positionBalleY = 0;
 let vitesseBalleY = 8;
-balle.style.width = largeurBalle + "px";
-balle.style.height = largeurBalle + "px";
+balle.style.width = largeurScene + "px";
+balle.style.height = hauteurScene + "px";
 
 
 setInterval(frame, 1000 / 60);

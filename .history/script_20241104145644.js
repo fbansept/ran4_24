@@ -22,13 +22,11 @@ scene.style.height = hauteurScene + "px";
 
 
 const balle = document.querySelector("#balle");
-let largeurBalle = 50;
+let largeur
 let positionBalleX = 0;
 let vitesseBalleX = 10;
 let positionBalleY = 0;
 let vitesseBalleY = 8;
-balle.style.width = largeurBalle + "px";
-balle.style.height = largeurBalle + "px";
 
 
 setInterval(frame, 1000 / 60);

@@ -19,5 +19,7 @@ body {
 
 #balle {
   position: absolute;
+  top: 50px;
+  left: 200px;
   object-fit: contain;
 }
