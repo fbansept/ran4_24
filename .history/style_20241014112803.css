@@ -1,0 +1,14 @@
+.container > .row > article > div {
+  position: relative;
+  width: 100%;
+}
+
+.container > .row > article > div > img {
+  object-fit: cover;
+}
+
+.button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

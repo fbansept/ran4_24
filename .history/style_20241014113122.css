@@ -1,0 +1,18 @@
+.container > .row > article > div {
+  position: relative;
+}
+
+.container > .row > article > div > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.bouton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.bouton::after {
+  content: "	\0025B6";
+}

@@ -1,0 +1,22 @@
+section > article,
+section > div,
+section > img {
+  height: 400px;
+}
+
+section > div > div {
+  background-color: grey;
+  width: 100%
+  heigh;
+}
+
+section > img {
+  object-fit: cover;
+  background-color: grey;
+}
+
+section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

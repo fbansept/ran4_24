@@ -1,0 +1,12 @@
+section > article,
+section > div,
+section > img {
+  border: solid 1px black;
+}
+
+section > div {
+  height: 500px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}

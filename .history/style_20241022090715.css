@@ -1,0 +1,10 @@
+section > article,
+section > div,
+section > img {
+  border: solid 1px black;
+}
+
+
+section > div {
+  border: solid 1px black;
+}

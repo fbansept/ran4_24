@@ -1,0 +1,22 @@
+section > article,
+section > div,
+section > img {
+  height: 400px;
+}
+
+section > article,
+section > div,
+section > img {
+  border: solid 1px black;
+}
+
+
+section > img {
+  object-fit: cover;
+}
+
+section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
