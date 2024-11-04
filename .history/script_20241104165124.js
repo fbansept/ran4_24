@@ -16,20 +16,12 @@ function frame() {
     vitesseBalleY = -vitesseBalleY;
   }
 
-  if (toucheHautPresse) {
-    if (positionBarreY > 0) {
-      positionBarreY -= 10;
-    } else {
-      positionBarreY = 0;
-    }
+  if (toucheHautPresse && positionBarreY > 0) {
+    positionBarreY -= 10;
   }
 
-  if (toucheBasPresse) {
-    if (positionBarreY < hauteurScene - hauteurBarre) {
-      positionBarreY += 10;
-    } else {
-      positionBarreY = hauteurScene - hauteurBarre;
-    }
+  if (toucheBasPresse && positionBarreY < hauteurScene - hauteurBarre) {
+    positionBarreY += 10;
   }
 }
 
@@ -41,16 +33,6 @@ const hauteurScene = 500;
 scene.style.width = largeurScene + "px";
 scene.style.height = hauteurScene + "px";
 
-// ----- initialisation barre -----
-
-const barre = document.querySelector("#barre");
-let largeurBarre = 50;
-let hauteurBarre = 200;
-let positionBarreY = hauteurScene / 2 - hauteurBarre / 2;
-let positionBarreX = 100;
-barre.style.width = largeurBarre + "px";
-barre.style.height = hauteurBarre + "px";
-
 // ----- initialisation balle -----
 
 const balle = document.querySelector("#balle");
@@ -61,6 +43,16 @@ let positionBalleY = 0;
 let vitesseBalleY = 8;
 balle.style.width = largeurBalle + "px";
 balle.style.height = largeurBalle + "px";
+
+// ----- initialisation barre -----
+
+const barre = document.querySelector("#barre");
+let largeurBarre = 50;
+let hauteurBarre = 200;
+let positionBarreY = hauteurScene / 2 - hauteurBarre / 2;
+let positionBarreX = 100;
+barre.style.width = largeurBarre + "px";
+barre.style.height = hauteurBarre + "px";
 
 // --------- EVENEMENT CLAVIER -------
 

@@ -24,11 +24,11 @@ function frame() {
     }
   }
 
-  if (toucheBasPresse) {
-    if (positionBarreY < hauteurScene - hauteurBarre) {
-      positionBarreY += 10;
+  if (toucheBasPresse && positionBarreY < hauteurScene - hauteurBarre) {
+    if (positionBarreY > 0) {
+      positionBarreY -= 10;
     } else {
-      positionBarreY = hauteurScene - hauteurBarre;
+      positionBarreY = 0;
     }
   }
 }

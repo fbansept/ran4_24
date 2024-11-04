@@ -19,17 +19,11 @@ function frame() {
   if (toucheHautPresse) {
     if (positionBarreY > 0) {
       positionBarreY -= 10;
-    } else {
-      positionBarreY = 0;
-    }
+    } else 
   }
 
-  if (toucheBasPresse) {
-    if (positionBarreY < hauteurScene - hauteurBarre) {
-      positionBarreY += 10;
-    } else {
-      positionBarreY = hauteurScene - hauteurBarre;
-    }
+  if (toucheBasPresse && positionBarreY < hauteurScene - hauteurBarre) {
+    positionBarreY += 10;
   }
 }
 
@@ -61,6 +55,8 @@ let positionBalleY = 0;
 let vitesseBalleY = 8;
 balle.style.width = largeurBalle + "px";
 balle.style.height = largeurBalle + "px";
+
+
 
 // --------- EVENEMENT CLAVIER -------
 

@@ -24,7 +24,7 @@ function frame() {
     }
   }
 
-  if (toucheBasPresse) {
+  if (toucheBasPresse && positionBarreY < ) {
     if (positionBarreY < hauteurScene - hauteurBarre) {
       positionBarreY += 10;
     } else {
