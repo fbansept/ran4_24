@@ -3,7 +3,7 @@ function frame() {
   positionBalleY += vitesseBalleY;
 
   balle.style.left = positionBalleX + "px";
-  balle.style.top = positionBalleY + "px";
+  balle.style.top = positionBalleX + "px";
 
   if (positionBalleX >= 970 || positionBalleX < 0) {
     vitesseBalleX = -vitesseBalleX;

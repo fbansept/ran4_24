@@ -20,8 +20,8 @@ body {
 }
 
 #balle {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 50px;
   left: 200px;

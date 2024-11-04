@@ -19,6 +19,6 @@ let vitesseBalleX = 10;
 let positionBalleY = 0;
 let vitesseBalleY = 8;
 
-const balle = document.querySelector("#balle");
+const balle = document.querySelector("html > body #balle");
 
 setInterval(frame, 1000 / 60);
