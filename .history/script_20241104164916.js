@@ -16,12 +16,12 @@ function frame() {
     vitesseBalleY = -vitesseBalleY;
   }
 
-  if (toucheHautPresse && positionBarreY > 0) {
+  if (toucheHautPresse) {
     positionBarreY -= 10;
   }
 
-  if (toucheBasPresse && positionBarreY < hauteurScene - hauteurBarre) {
-    positionBarreY += 10;
+  if (toucheBasPresse) {
+    positionBarreY -= 10;
   }
 }
 

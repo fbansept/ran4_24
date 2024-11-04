@@ -4,7 +4,7 @@ function frame() {
 
   balle.style.left = positionBalleX + "px";
   balle.style.top = positionBalleY + "px";
-
+  
   barre.style.left = positionBarreX + "px";
   barre.style.top = positionBarreY + "px";
 
@@ -16,12 +16,8 @@ function frame() {
     vitesseBalleY = -vitesseBalleY;
   }
 
-  if (toucheHautPresse && positionBarreY > 0) {
-    positionBarreY -= 10;
-  }
-
-  if (toucheBasPresse && positionBarreY < hauteurScene - hauteurBarre) {
-    positionBarreY += 10;
+  if(toucheHautPresse) {
+    positionBarreY 
   }
 }
 

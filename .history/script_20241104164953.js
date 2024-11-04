@@ -20,7 +20,7 @@ function frame() {
     positionBarreY -= 10;
   }
 
-  if (toucheBasPresse && positionBarreY < hauteurScene - hauteurBarre) {
+  if (toucheBasPresse && po) {
     positionBarreY += 10;
   }
 }
