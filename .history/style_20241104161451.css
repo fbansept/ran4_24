@@ -22,7 +22,7 @@ body {
   object-fit: contain;
 }
 
-#barre {
+#balle {
   position: absolute;
-  background-color: blue;
+  object-fit: contain;
 }

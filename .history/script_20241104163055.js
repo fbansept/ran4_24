@@ -6,7 +6,7 @@ function frame() {
   balle.style.top = positionBalleY + "px";
   
   barre.style.left = positionBarreX + "px";
-  barre.style.top = positionBarreY + "px";
+  barre.style.top = positionBalleY + "px";
 
   if (positionBalleX >= largeurScene - largeurBalle || positionBalleX < 0) {
     vitesseBalleX = -vitesseBalleX;

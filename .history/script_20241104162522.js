@@ -4,9 +4,6 @@ function frame() {
 
   balle.style.left = positionBalleX + "px";
   balle.style.top = positionBalleY + "px";
-  
-  barre.style.left = positionBarreX + "px";
-  barre.style.top = positionBarreY + "px";
 
   if (positionBalleX >= largeurScene - largeurBalle || positionBalleX < 0) {
     vitesseBalleX = -vitesseBalleX;
@@ -15,6 +12,8 @@ function frame() {
   if (positionBalleY >= hauteurScene - largeurBalle || positionBalleY < 0) {
     vitesseBalleY = -vitesseBalleY;
   }
+
+  
 }
 
 // ----- initialisation scene -----
@@ -36,15 +35,16 @@ let vitesseBalleY = 8;
 balle.style.width = largeurBalle + "px";
 balle.style.height = largeurBalle + "px";
 
-// ----- initialisation barre -----
+// ----- initialisation balle -----
 
-const barre = document.querySelector("#barre");
-let largeurBarre = 50;
-let hauteurBarre = 200;
-let positionBarreY = hauteurScene / 2 - hauteurBarre / 2;
-let positionBarreX = 100;
-barre.style.width = largeurBarre + "px";
-barre.style.height = hauteurBarre + "px";
+const balle = document.querySelector("#balle");
+let largeurBalle = 100;
+let positionBalleX = 0;
+let vitesseBalleX = 10;
+let positionBalleY = 0;
+let vitesseBalleY = 8;
+balle.style.width = largeurBalle + "px";
+balle.style.height = largeurBalle + "px";
 
 // --------- EVENEMENT CLAVIER -------
 
