@@ -5,9 +5,9 @@ function frame() {
   //si le x depasse la scene
   //alors on inverse la vitesse de la balle
 
-  // if() {
-
-  // }
+  if() {
+    
+  }
 }
 
 let positionBalleX = 0;

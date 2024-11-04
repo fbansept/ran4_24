@@ -1,0 +1,1 @@
+const balle = document.getElementById("balle")

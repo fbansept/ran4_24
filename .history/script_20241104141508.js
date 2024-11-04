@@ -3,11 +3,7 @@ function frame() {
   balle.style.left = positionBalleX + "px";
 
   //si le x depasse la scene
-  //alors on inverse la vitesse de la balle
-
-  // if() {
-
-  // }
+  //alors on inverse la vitesse de la bale
 }
 
 let positionBalleX = 0;
